@@ -22,7 +22,7 @@ const Skills = () => {
         {/* Texto-Título My Skills */}
         <div className="container mx-auto text-center">
           <h1 className="text-5xl font-Inter font-regular text-primary mb-16">
-            Maria’s <span className="text-text1">Skills</span> and{" "}
+            Maria&apos;s <span className="text-text1">Skills</span> and{" "}
             <span className="text-text1">Achievements</span>
           </h1>
         </div>
