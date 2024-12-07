@@ -15,7 +15,7 @@ const MoreAboutMe = () => {
               Who am I?
             </h3>
             <p className="text-lg text-gray-600 mb-6">
-              Hello! I'm Maria, a passionate software developer with a
+              Hello! I&apos;m Maria, a passionate software developer with a
               strong background in creating innovative solutions that solve
               real-world problems. I have experience working with various
               technologies including JavaScript, React, Node.js, and more. My
@@ -31,8 +31,8 @@ const MoreAboutMe = () => {
               with various programming languages and frameworks. Over time, I
               transitioned into professional development and have had the
               opportunity to work on exciting projects across multiple
-              industries. Whether it's coding, problem-solving, or learning
-              new technologies, I'm always eager to expand my skills.
+              industries. Whether it&apos;s coding, problem-solving, or learning
+              new technologies, I&apos;m always eager to expand my skills.
             </p>
           </div>
 
