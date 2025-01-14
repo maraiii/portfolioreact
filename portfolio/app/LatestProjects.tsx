@@ -1,9 +1,10 @@
 import React from "react";
+import Image from 'next/image';
 import { FaGithub } from "react-icons/fa"; // Ícone do GitHub para os links dos projetos
 
 const LatestProjects = () => {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-1">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-4xl font-semibold text-gray-800 mb-12">
           Explore My Latest Projects
@@ -12,11 +13,11 @@ const LatestProjects = () => {
         {/* Cards de Projetos */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              src="/assets/project1.jpg" // Caminho da imagem do projeto
+            <Image
+              src="/assets/project1.jpg"
               alt="Project 1"
-              className="w-full h-56 object-cover"
-            />
+              className="w-full h-56 object-cover">
+            </Image>
             <div className="p-6">
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
                 Project Title 1
@@ -37,8 +38,8 @@ const LatestProjects = () => {
           </div>
 
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              src="/assets/project2.jpg" // Caminho da imagem do projeto
+            <Image
+              src="/assets/project2.jpg"
               alt="Project 2"
               className="w-full h-56 object-cover"
             />
@@ -62,8 +63,8 @@ const LatestProjects = () => {
           </div>
 
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img
-              src="/assets/project3.jpg" // Caminho da imagem do projeto
+            <Image
+              src="/assets/project3.jpg"
               alt="Project 3"
               className="w-full h-56 object-cover"
             />

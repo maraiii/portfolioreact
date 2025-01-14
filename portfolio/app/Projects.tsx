@@ -1,17 +1,18 @@
 import React from "react";
+import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <section className="relative w-full min-h-screen">
+    <section className="relative py-12 ">
       {/* Background com gradiente radial */}
-      <div className="absolute inset-0 -z-10 bg-slate-950">
+      <div className="absolute inset-0 -z-10 bg-black">
         {/* Círculo esquerdo */}
-        <div className="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
+        <div className="absolute bottom-0 left-[-20%] right-0 top-[10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
         {/* Círculo esquerdo azul */}
         <div className="absolute bottom-0 left-[-40%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(0,0,255,.15),rgba(255,255,255,0))]"></div>
         {/* Círculo direito roxo na parte inferior */}
-  <div className="absolute bottom-[-10%] right-[-20%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
+        <div className="absolute bottom-[20%] right-[-20%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
       </div>
 
       <div className="relative flex flex-col items-center justify-center w-full min-h-screen p-16">
@@ -28,10 +29,12 @@ const Projects = () => {
         {/* Cards de Projetos */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           <div className="bg-transparent hover:bg-white transition duration-200 shadow-lg overflow-hidden border-2 border-text2 hover:scale-105 hover:shadow-xl w-[330px] h-[460px]">
-            <img
+            <Image
               src="/assets/project1.png"
               alt="Project 1"
               className="w-full h-56 object-cover"
+              width={500}
+              height={280}
             />
             <div className="p-6">
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
@@ -55,10 +58,12 @@ const Projects = () => {
           </div>
 
           <div className="bg-transparent hover:bg-white transition duration-200 shadow-lg overflow-hidden border-2 border-text2 hover:scale-105 hover:shadow-xl w-[330px] h-[460px]">
-            <img
+            <Image
               src="/assets/project2.png"
               alt="Project 2"
               className="w-full h-56 object-cover"
+              width={500}
+              height={280}
             />
             <div className="p-6">
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
@@ -81,10 +86,12 @@ const Projects = () => {
           </div>
 
           <div className="bg-transparent hover:bg-white transition duration-200 shadow-lg overflow-hidden border-2 border-text2 hover:scale-105 hover:shadow-xl w-[330px] h-[460px]">
-            <img
+            <Image
               src="/assets/project3.png"
               alt="Project 3"
               className="w-full h-56 object-cover"
+              width={500}
+              height={280}
             />
             <div className="p-6">
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">

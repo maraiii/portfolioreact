@@ -47,7 +47,7 @@ const Footer = () => {
         {/* Direitos Autorais */}
         <div className="text-center">
           <p className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} Maria. All rights reserved.
+          ©{new Date().getFullYear()} Maria. All rights reserved.
           </p>
         </div>
       </div>

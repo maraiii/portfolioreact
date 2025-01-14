@@ -4,18 +4,18 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-auto py-12 bg-slate-950">
-      <div className="relative h-full w-full bg-slate-950">
-        <div className="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
+    <section className=" relative bg-black ">
+      <div className="relative">
+        <div className="absolute bottom-0 left-[-20%] right-0 top-[-40%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
         <div className="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
         </div>
 
       {/* TEXTO MAIN */}
-      <div className="container mx-auto px-8 sm:px-16 flex flex-col md:flex-row items-center">
+      <div className="container mx-auto p-8 sm:px-16 flex flex-col md:flex-row items-center">
         <div className="text-center md:text-left mb-8 md:mb-0 md:w-1/2">
-          <h1 className="text-5xl font-regular mb-4">
+          <h1 className="text-text1 text-5xl font-regular mb-4">
             Software for faster solutions and{" "}
-            <span className="text-primary">growth.</span>
+            <span className="text-primary font-bold italic">growth.</span>
           </h1>
           <p className="text-lg text-text2 mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -45,11 +45,11 @@ const HeroSection = () => {
           </div>
 
           {/* CONNECT & DOWNLOAD CV */}
-          <div className="flex flex-col gap-4 mt-14">
-            <button className="bg-primary text-white py-2 px-6 rounded-lg hover:bg-secondary transform transition">
+          <div className="flex flex-col gap-4 mt-14 sm:flex-row sm:justify-start sm:items-start sm:gap-8 sm:w-auto items-center justify-center">
+            <button className="bg-primary text-white py-2 px-6 w-32 rounded-lg hover:bg-secondary transform transition">
               Connect
             </button>
-            <button className="bg-transparent border-2 border-white text-white py-2 px-6 rounded-lg hover:bg-white hover:text-black transform transition">
+            <button className="bg-transparent border-2 border-white text-white py-2 px-6 w-32 lg:w-40 rounded-lg hover:bg-white hover:text-black transform transition">
               Download CV
             </button>
           </div>

@@ -1,8 +1,9 @@
 import React from "react";
+import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="relative w-full h-auto py-12 bg-slate-950">
+    <section className="relative w-full h-auto py-12 bg-black">
         <div className="relative h-full w-full bg-slate-950"><div className="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div><div className="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div></div>
       <div className="relative container mx-auto">
         {/* Títulos e Decorações */}
@@ -25,10 +26,12 @@ const About = () => {
         >
             {/* Imagem de Perfil */}
             <div className="flex-shrink-0 px-6">
-              <img
+              <Image
                 src="/assets/bill.jpg"
                 alt="Profile Picture"
                 className="rounded-full w-32 h-32 mb-6"
+                width={500}
+              height={280}
               />
               <h3 className="text-3xl font-bold mb-2">Web Developer</h3>
               <p className="text-xl font-semibold mb-4">
@@ -59,7 +62,7 @@ const About = () => {
         <div className="items-center flex flex-col mt-6">
           <a
             href="#contact"
-            className="bg-primary text-white font-Inter py-2 px-4 rounded-full text-lg hover:bg-secondary transition"
+            className="bg-pink text-white font-Inter py-2 px-4 rounded-full text-lg hover:bg-secondary transition"
           >
             Work with Maria
           </a>

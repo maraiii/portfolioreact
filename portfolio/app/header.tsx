@@ -1,29 +1,67 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 const Header = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return (
-    <header className="bg-black text-white py-4 mb-12">
-      <div className="container mx-auto flex justify-between items-center px-4">
+    <header className="bg-black text-white py-4">
+      <div className=" mx-auto flex justify-between items-center px-4">
         {/* Logo */}
-        <div className="text-2xl font-bold">
-          LOGO
-        </div>
+        <div className="text-2xl font-bold">LOGO</div>
 
         {/* LINKS DE NAVEGAÇÃO */}
         <nav className="hidden md:flex space-x-8">
-          <a href="#home" className="text-[#B026FF] hover:text-text1 font-Inter font-bold">Home</a>
-          <a href="#skills" className="text-[#B026FF] hover:text-text1 font-Inter font-bold">Skills</a>
+          <a
+            href="#home"
+            className="text-[#B026FF] hover:text-text1 font-Inter font-bold"
+          >
+            Home
+          </a>
+          <a
+            href="#skills"
+            className="text-[#B026FF] hover:text-text1 font-Inter font-bold"
+          >
+            Skills
+          </a>
 
           {/* Dropdown for Projects */}
-          <div className="relative group">
-            <button className="text-[#B026FF] hover:text-text1 font-Inter font-bold">
+          <div className="relative z-40">
+            <button
+              onClick={toggleDropdown}
+              className="text-[#B026FF] hover:text-text1 font-Inter font-bold"
+            >
               Projects
             </button>
-            <div className="absolute left-0 mt-2 bg-gray-800 text-white shadow-lg rounded-lg hidden group-hover:block ">
-              <a href="#project1" className="block px-4 py-2 hover:bg-purple-500">Project 1</a>
-              <a href="#project2" className="block px-4 py-2 hover:bg-purple-500">Project 2</a>
-              <a href="#project3" className="block px-4 py-2 hover:bg-purple-500">Project 3</a>
-            </div>
+
+            {/* Exibição condicional do dropdown */}
+            {isDropdownOpen && (
+              <div className="absolute left-0 mt-2 bg-gray-800 text-white shadow-lg rounded-lg">
+                <a
+                  href="#project1"
+                  className="block px-4 py-2 hover:bg-purple-500"
+                >
+                  Project 1
+                </a>
+                <a
+                  href="#project2"
+                  className="block px-4 py-2 hover:bg-purple-500"
+                >
+                  Project 2
+                </a>
+                <a
+                  href="#project3"
+                  className="block px-4 py-2 hover:bg-purple-500"
+                >
+                  Project 3
+                </a>
+              </div>
+            )}
           </div>
         </nav>
 

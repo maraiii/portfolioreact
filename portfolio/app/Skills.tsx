@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <section className="relative w-full h-auto py-12 bg-slate-950">
-      <div className="relative h-full w-full bg-slate-950">
+    <section className=" relative py-16 bg-black">
+      <div className="relative h-full w-full bg-black">
         <div className="absolute bottom-0 left-[-20%] right-0 top-[-40%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
         <div className="absolute bottom-0 right-[-20%] top-[30%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
       
@@ -32,7 +32,7 @@ const Skills = () => {
           {/* Imagem 1 */}
           <div className="flex-shrink-0 w-48 h-48 sm:w-36 sm:h-36 relative">
             <Image
-              src="/assets/skill1.png" // Substitua pelo caminho correto da imagem
+              src="/assets/skill1.png"
               alt="Skill 1"
               layout="fill"
               objectFit="cover"
@@ -43,7 +43,7 @@ const Skills = () => {
           {/* Imagem 2 */}
           <div className="flex-shrink-0 w-48 h-48 sm:w-36 sm:h-36 relative">
             <Image
-              src="/assets/skill2.png" // Substitua pelo caminho correto da imagem
+              src="/assets/skill2.png"
               alt="Skill 2"
               layout="fill"
               objectFit="cover"
@@ -54,7 +54,7 @@ const Skills = () => {
           {/* Imagem 3 */}
           <div className="flex-shrink-0 w-48 h-48 sm:w-36 sm:h-36 relative">
             <Image
-              src="/assets/skill3.png" // Substitua pelo caminho correto da imagem
+              src="/assets/skill3.png"
               alt="Skill 3"
               layout="fill"
               objectFit="cover"
@@ -67,10 +67,6 @@ const Skills = () => {
         <p className="text-lg text-center text-text2 max-w-2xl mx-auto mt-9">
           Lorem ipsum dolor sit amet consectetur. Lectus massa sodales at sit aliquet velit ipsum. Elementum turpis enim consequat pharetra iaculis. Enim odio id tellus fames neque. Commodo ac imperdiet a bibendum nulla viverra. Id amet id dui et euismod volutpat in tristique.
         </p>
-
-        {/* Luz do background */}
-        <div className="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
-        <div className="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
       </div>
     </section>
   );
