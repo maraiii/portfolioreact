@@ -4,9 +4,9 @@ import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <section className="relative py-12 ">
+    <section className="container relative py-12 ">
       {/* Background com gradiente radial */}
-      <div className="absolute inset-0 -z-10 bg-black">
+      <div className="absolute inset-0 -z-10 bg-slate-950">
         {/* Círculo esquerdo */}
         <div className="absolute bottom-0 left-[-20%] right-0 top-[10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
         {/* Círculo esquerdo azul */}
@@ -22,12 +22,12 @@ const Projects = () => {
             Explore my <span className="text-text1">Latest Projects</span>
           </h1>
         </div>
-        <button className="w-[144px] h-[40px] p-2 mb-14 bg-white border-2 border-gray-400 text-primary font-semibold hover:bg-gray-100 focus:outline-none transition duration-200">
+        <button className="w-[144px] h-[40px] p-2 mb-14 bg-white border-2 border-gray-400 text-primary font-semibold hover:bg-primary hover:text-text1 hover:border-text1 focus:outline-none transition duration-200">
           View All
         </button>
 
         {/* Cards de Projetos */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="bg-transparent hover:bg-white transition duration-200 shadow-lg overflow-hidden border-2 border-text2 hover:scale-105 hover:shadow-xl w-[330px] h-[460px]">
             <Image
               src="/assets/project1.png"

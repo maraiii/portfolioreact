@@ -3,21 +3,20 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <section className=" relative py-16 bg-black">
-      <div className="relative h-full w-full bg-black">
-        <div className="absolute bottom-0 left-[-20%] right-0 top-[-40%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
-        <div className="absolute bottom-0 right-[-20%] top-[30%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
-      
+    <section className="container relative py-16 bg-slate-950">
+      <div className="relative h-full w-full bg-slate-950">
         <div className="absolute inset-0 -z-10">
           <Image
             src="/assets/background.png"
             alt="Background Image"
-            layout="fill"
-            objectFit="cover"
+            width={40}
+            height={40}
             quality={100}
             className="opacity-100"
           />
         </div>
+        <div className="absolute bottom-0 left-[-20%] right-0 top-[-40%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
+        <div className="absolute bottom-0 right-[-20%] top-[30%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
 
         {/* Texto-Título My Skills */}
         <div className="container mx-auto text-center">
@@ -65,7 +64,10 @@ const Skills = () => {
 
         {/* Texto abaixo das imagens */}
         <p className="text-lg text-center text-text2 max-w-2xl mx-auto mt-9">
-          Lorem ipsum dolor sit amet consectetur. Lectus massa sodales at sit aliquet velit ipsum. Elementum turpis enim consequat pharetra iaculis. Enim odio id tellus fames neque. Commodo ac imperdiet a bibendum nulla viverra. Id amet id dui et euismod volutpat in tristique.
+          Lorem ipsum dolor sit amet consectetur. Lectus massa sodales at sit
+          aliquet velit ipsum. Elementum turpis enim consequat pharetra iaculis.
+          Enim odio id tellus fames neque. Commodo ac imperdiet a bibendum nulla
+          viverra. Id amet id dui et euismod volutpat in tristique.
         </p>
       </div>
     </section>
