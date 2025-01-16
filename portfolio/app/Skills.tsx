@@ -3,18 +3,9 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <section className="container relative py-16 bg-slate-950">
-      <div className="relative h-full w-full bg-slate-950">
-        <div className="absolute inset-0 -z-10">
-          <Image
-            src="/assets/background.png"
-            alt="Background Image"
-            width={40}
-            height={40}
-            quality={100}
-            className="opacity-100"
-          />
-        </div>
+    <section className="w-full relative py-16 bg-slate-950 bg-[url('/assets/background.png')] bg-cover bg-center" >
+     
+      <div className="relative h-full w-full">
         <div className="absolute bottom-0 left-[-20%] right-0 top-[-40%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
         <div className="absolute bottom-0 right-[-20%] top-[30%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
 

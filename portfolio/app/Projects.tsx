@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <section className="container relative py-12 ">
+    <section className="w-full relative py-12 ">
       {/* Background com gradiente radial */}
       <div className="absolute inset-0 -z-10 bg-slate-950">
         {/* Círculo esquerdo */}
@@ -27,7 +27,7 @@ const Projects = () => {
         </button>
 
         {/* Cards de Projetos */}
-        <div className="container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="bg-transparent hover:bg-white transition duration-200 shadow-lg overflow-hidden border-2 border-text2 hover:scale-105 hover:shadow-xl w-[330px] h-[460px]">
             <Image
               src="/assets/project1.png"
