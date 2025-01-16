@@ -4,13 +4,13 @@ import Image from "next/image";
 const Skills = () => {
   return (
     <section className="w-full relative py-16 bg-slate-950 bg-[url('/assets/background.png')] bg-cover bg-center" >
-     
-      <div className="relative h-full w-full">
+      
+      <div className="relative h-full w-full overflow-x-hidden overflow-y-hidden">
         <div className="absolute bottom-0 left-[-20%] right-0 top-[-40%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
         <div className="absolute bottom-0 right-[-20%] top-[30%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
 
         {/* Texto-Título My Skills */}
-        <div className="container mx-auto text-center">
+        <div className="container mx-auto text-center p-3">
           <h1 className="text-5xl font-Inter font-regular text-primary mb-16">
             Maria&apos;s <span className="text-text1">Skills</span> and{" "}
             <span className="text-text1">Achievements</span>
@@ -54,7 +54,7 @@ const Skills = () => {
         </div>
 
         {/* Texto abaixo das imagens */}
-        <p className="text-lg text-center text-text2 max-w-2xl mx-auto mt-9">
+        <p className="text-lg text-center text-text2 max-w-2xl mx-auto mt-9 p-5">
           Lorem ipsum dolor sit amet consectetur. Lectus massa sodales at sit
           aliquet velit ipsum. Elementum turpis enim consequat pharetra iaculis.
           Enim odio id tellus fames neque. Commodo ac imperdiet a bibendum nulla

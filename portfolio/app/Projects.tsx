@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <section className="w-full relative py-12 ">
+    <section className="w-full relative  overflow-x-hidden overflow-y-hidden">
       {/* Background com gradiente radial */}
       <div className="absolute inset-0 -z-10 bg-slate-950">
         {/* Círculo esquerdo */}
@@ -15,9 +15,9 @@ const Projects = () => {
         <div className="absolute bottom-[20%] right-[-20%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
       </div>
 
-      <div className="relative flex flex-col items-center justify-center w-full min-h-screen p-16">
+      <div className="relative flex flex-col items-center justify-center w-full min-h-screen">
         {/* Texto-Título My Latest Projects */}
-        <div className="container mx-auto text-center mb-16">
+        <div className="container mx-auto text-center my-16 p-3">
           <h1 className="text-5xl font-Inter font-regular text-primary ">
             Explore my <span className="text-text1">Latest Projects</span>
           </h1>
@@ -27,7 +27,7 @@ const Projects = () => {
         </button>
 
         {/* Cards de Projetos */}
-        <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="bg-transparent hover:bg-white transition duration-200 shadow-lg overflow-hidden border-2 border-text2 hover:scale-105 hover:shadow-xl w-[330px] h-[460px]">
             <Image
               src="/assets/project1.png"
@@ -85,7 +85,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="bg-transparent hover:bg-white transition duration-200 shadow-lg overflow-hidden border-2 border-text2 hover:scale-105 hover:shadow-xl w-[330px] h-[460px]">
+          <div className="bg-transparent hover:bg-white transition duration-200 shadow-lg overflow-hidden border-2 border-text2 hover:scale-105 hover:shadow-xl w-[330px] h-[460px] mb-16">
             <Image
               src="/assets/project3.png"
               alt="Project 3"
