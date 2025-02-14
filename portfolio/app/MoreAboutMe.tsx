@@ -37,14 +37,14 @@ const MoreAboutMe = () => {
           </div>
 
           {/* Foto ou Imagem */}
-          <div className="md:w-1/2">
+           {/*<div className="md:w-1/2">
             <img
               src="/assets/maria.jpg" // Caminho da imagem
               alt="Maria"
               className="rounded-full w-64 h-64 object-cover mx-auto shadow-lg"
             />
           </div>
-        </div>
+        </div>*/}
 
         {/* <div className="mt-12">
           <h3 className="text-2xl font-semibold text-gray-800 mb-6">My Skills</h3>
@@ -71,6 +71,7 @@ const MoreAboutMe = () => {
             </div>
           </div>
         </div> */}
+      </div>
       </div>
     </section>
   );
