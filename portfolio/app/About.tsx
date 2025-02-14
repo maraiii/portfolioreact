@@ -27,7 +27,7 @@ const About = () => {
             {/* Imagem de Perfil */}
             <div className="flex-shrink-0 px-6">
               <Image
-                src="/assets/perfilsa.png"
+                src="/assets/perfila.png"
                 alt="Profile Picture"
                 className="rounded-full w-32 h-32 mb-6"
                 width={500}
