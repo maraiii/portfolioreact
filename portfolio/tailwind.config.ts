@@ -16,7 +16,7 @@ export default {
         text3: '#201F1F',
       },
       fontFamily: {
-        Inter: ['"Inter"', 'sans-serif'],
+        amoria: ["Amoria", "sans-serif"]
       },
       fontWeight: {
         regular: '400',

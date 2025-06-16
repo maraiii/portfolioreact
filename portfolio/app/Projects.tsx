@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section className="w-full relative  overflow-x-hidden overflow-y-hidden">
       {/* Background com gradiente radial */}
-      <div className="absolute inset-0 -z-10 bg-slate-950">
+      <div className="absolute inset-0 -z-10 bg-[#1f1f1f]">
         {/* Círculo esquerdo */}
         <div className="absolute bottom-0 left-[-20%] right-0 top-[10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
         {/* Círculo esquerdo azul */}

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Amoria";
+  src: url("../fonts/Amoria.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variáveis CSS */
+:root {
+  --foreground: #ffffff; /* Cor padrão do texto */
+  --background: #18181b; /* Cor padrão de fundo (zinc-800) */
+}
+
+/* Regras globais */
+body {
+  @apply bg-zinc-800 antialiased;
+  color: var(--foreground);
+  background: var(--background);
+  margin: 0;
+  padding: 0;
+  font-family: "Amoria", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
