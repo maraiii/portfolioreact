@@ -135,7 +135,7 @@ const HeroSection = () => {
         onClick={openOverlay}
         className="fixed top-6 right-6 z-50 px-6 py-2 bg-pink-600 text-white rounded-full shadow-lg hover:bg-pink-700 transition-all"
       >
-        it's a home
+        it&apos;s a home
       </button>
 
       <svg className="pointer-events-none fixed inset-0 h-full w-full opacity-[.15]">
