@@ -48,7 +48,7 @@ export const RafayelSection = ({ textRef, videoRef2 }: RafayelSectionProps) => {
             ref={titleRef}
             className="text-[9vw] leading-none tracking-tight font-bold text-white"
           >
-            How short is a fish's memory?
+            How short is a fish&apos;s memory?
             <span className="text-pink-600/80 italic block">
               cansei. chato.
             </span>

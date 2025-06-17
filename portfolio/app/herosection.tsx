@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { RafayelSection } from "./section2";
-import CustomCursor from "./ui/Cursor";
+import CustomCursor from "../app/ui/cursor";
 gsap.registerPlugin(ScrollTrigger);
 
 const HeroSection = () => {
@@ -24,7 +24,6 @@ const HeroSection = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const videoRef1 = useRef<HTMLVideoElement | null>(null);
   const videoRef2 = useRef<HTMLVideoElement>(null);
-  const videoRef3 = useRef<HTMLVideoElement | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
