@@ -1,5 +1,4 @@
 import "./styles/global.css";
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -21,7 +20,6 @@ const HeroSection = () => {
   const notText2 = useRef<HTMLHeadingElement | null>(null);
   const promoText = useRef<HTMLHeadingElement | null>(null);
 
-  const audioRef = useRef<HTMLAudioElement | null>(null);
   const videoRef1 = useRef<HTMLVideoElement | null>(null);
   const videoRef2 = useRef<HTMLVideoElement>(null);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -185,11 +183,6 @@ const HeroSection = () => {
       onComplete: () => setMenuOpen(false),
     });
   };
-  const handlePlayMusic = () => {
-    if (audioRef.current) {
-      audioRef.current.play();
-    }
-  };
 
   return (
     <div className="bg-black antialiased">
@@ -214,154 +207,72 @@ const HeroSection = () => {
         </filter>
         <rect width="100%" height="100%" filter="url(#grain)" />
       </svg>
-      <div
-        data-cursor-type="drag"
-        ref={sectionRef}
-        className="relative w-full h-screen bg-black overflow-hidden"
-      >
-        <div className="relative w-full h-full">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-            data-cursor-type="play"
-          >
-            <source src="/assets/lirio.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute bottom-10 right-10 w-[30%] max-w-[400px]">
-            <div className="relative group">
-              <div className="border-4 border-black rounded-lg p-2 backdrop-blur-sm">
-                <Image
-                  src="/assets/enf.png"
-                  width={500}
-                  height={300}
-                  alt="Overlay"
-                  className="w-full h-auto object-cover rounded-sm transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
 
-              <button
-                onClick={handlePlayMusic}
-                className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
-              >
-                <div className="bg-pink-600/80 rounded-full p-3">play</div>
-              </button>
-              <audio ref={audioRef} src="/assets/ethereal.mp4" loop />
-            </div>
-          </div>
-        </div>
-
-        <div className="absolute bottom-20 left-10 text-white">
-          <h2 ref={promoText} className="text-4xl font-bold mb-2">
-            + + + PROMOTION VIDEO
-          </h2>
-          <p className="text-xl opacity-80">Video enumered edit</p>
-          <button className="mt-4 px-6 py-2 bg-pink-600 rounded-full hover:bg-pink-700 transition">
-            Download Now
-          </button>
-        </div>
-      </div>
       {menuOpen && (
         <div
           ref={overlayRef}
-          className="fixed top-0 left-0 w-full h-full z-[100] bg-black text-white flex flex-col items-center justify-center space-y-6 text-4xl"
+          className="fixed top-0 left-0 w-full h-full z-[100] bg-zinc-900 text-white flex flex-col items-center justify-center space-y-6 text-4xl"
         >
+          <svg className="pointer-events-none fixed inset-0 h-full w-full opacity-[.15]">
+            <filter id="grain">
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.80"
+                numOctaves="4"
+                stitchTiles="stitch"
+              />
+              <feColorMatrix type="saturate" values="0" />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#grain)" />
+          </svg>
+
           <button
             onClick={closeOverlay}
-            className="absolute top-6 right-6 text-3xl hover:text-pink-400"
+            className="absolute top-6 right-6 text-3xl hover:text-pink-600/80"
           >
             ✕
           </button>
           <a
             href="#home"
             onClick={closeOverlay}
-            className="hover:text-pink-400"
+            className="hover:text-pink-600/80"
           >
             Home
           </a>
           <a
             href="#section1"
             onClick={closeOverlay}
-            className="hover:text-pink-400"
+            className="hover:text-pink-600/80"
           >
             Section 1
           </a>
           <a
             href="#section2"
             onClick={closeOverlay}
-            className="hover:text-pink-400"
+            className="hover:text-pink-600/80"
           >
             Section 2
           </a>
           <a
             href="#footer"
             onClick={closeOverlay}
-            className="hover:text-pink-400"
+            className="hover:text-pink-600/80"
           >
             Footer
           </a>
         </div>
       )}
 
-      <section
-        data-cursor-type="drag"
-        className="w-full relative antialiased overflow-x-hidden"
-      >
+      <section className="w-full relative antialiased overflow-x-hidden">
         <section ref={sectionRef1}>
           <div className="relative">
-            <h1
-              ref={titleRef}
-              className="text-[15vw] leading-none tracking-tight font-bold relative z-10 my-11"
-            >
-              CLOUD STRIFE<span className="align-super text-[6vw]">©</span>
-            </h1>
-            <Image
-              src={"/assets/fitaa.png"}
-              width={100}
-              height={100}
-              className="block lg:hidden mx-auto "
-              alt="fita"
-            ></Image>
-            <p className="block lg:hidden text-center text-sm mb-16 text-gray-500">
-              Este aviso aparece só no celular e tablet.
-            </p>
-            <div className="flex justify-end">
+            <div className="flex justify-center">
               <h1
                 ref={rafayelRef}
-                className="text-[15vw] leading-none tracking-tight font-bold relative z-10 my-11"
+                className="text-[18vw] text-[#f9fbfd] leading-none tracking-tight font-bold relative z-10 mb-28"
               >
-                RAFAYEL<span className="align-super text-[6vw]">©</span>
+                PROJECTS₊
               </h1>
-            </div>
-
-            <div className="hidden sm:flex absolute top-0 right-0 w-[30%] h-full items-center lg:mr-16">
-              <Image
-                src="/assets/fitaa.png"
-                width={50}
-                height={50}
-                alt="Fundo"
-              />
-              <div className="relative w-full aspect-video ">
-                <video
-                  className="rounded-lg shadow-2xl object-cover w-full h-full"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                >
-                  <source src="/assets/hips.mp4" type="video/mp4" />
-                </video>
-
-                <div className="absolute inset-0 border-2 border-white/20 rounded-lg pointer-events-none" />
-              </div>
-              <Image
-                src="/assets/fitaa.png"
-                width={50}
-                height={50}
-                alt="Fundo"
-              />
             </div>
           </div>
 
@@ -387,6 +298,7 @@ const HeroSection = () => {
             <div className="w-[51.7%] h-full absolute left-0 top-0 ">
               <div className="relative w-full h-full">
                 <video
+                  data-cursor-type="drag"
                   ref={videoRef1}
                   autoPlay
                   muted
@@ -404,7 +316,6 @@ const HeroSection = () => {
         <RafayelSection textRef={textRef} videoRef2={videoRef2} />
 
         <section
-          data-cursor-type="drag"
           ref={sectionRef3}
           className="w-full relative py-5 antialiased overflow-x-hidden"
         >
@@ -422,6 +333,7 @@ const HeroSection = () => {
             <div className="w-[51.7%] h-full absolute left-0 top-0 ">
               <div className="relative w-full h-full">
                 <video
+                  data-cursor-type="drag"
                   autoPlay
                   muted
                   loop

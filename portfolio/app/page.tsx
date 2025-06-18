@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Header from "./header";
 import HeroSection from "./herosection";
+import Hero from "./hero";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,6 +71,7 @@ export default function Home() {
 
   return (
     <>
+      <Hero />
       <HeroSection />
       <Header />
     </>
