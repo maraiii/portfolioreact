@@ -41,17 +41,25 @@ const Hero = () => {
   return (
     <>
       <div className="bg-black">
-        <div className="relative w-fit">
-          {/**  <Image
-            src="/assets/lily.png"
-            alt="Lily flower"
-            width={300}
-            height={300}
-            className="absolute top-10 right-0 mr-32 z-10"
-          />  */}
-          <h1 ref={titleRef} className="text-[30vw] bg-black relative z-0">
+        <div className="flex flex-col">
+          <h1
+            ref={titleRef}
+            className="text-[30vw] text-white bg-black leading-none items-start"
+          >
             MARAI
           </h1>
+
+          <div className="flex flex-wrap justify-center md:justify-end">
+            <button className="px-6 py-2 text-[18px] font-semibold text-white border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-black transition">
+              Marai
+            </button>
+            <button className="px-6 py-2 text-[18px] font-semibold text-white border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-black transition">
+              Creative
+            </button>
+            <button className="px-6 py-2 text-[18px] font-semibold text-white border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-black transition">
+              Teamwork
+            </button>
+          </div>
         </div>
       </div>
       <div
